@@ -3,32 +3,88 @@ body {
     padding: 0px;
     list-style: none;
     font-size: 1.2rem;
-    font-family: 'Roboto', sans-serif;      
+    font-family: 'Roboto', sans-serif;  
+        
 }
 
-.content-login {   
-    height: 100vh;
-    width: 100vw;  
+span {
+    font-weight: bold;   
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+}
+
+ul {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 0.9rem;
+}
+
+p {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+header {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;    
-    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin: 0;
+}
+
+
+.content {     
+    display: grid; 
+    margin: 0;    
+    padding: 0;
 }
 
 /* Tela de Login */
 
-.left {
-    padding: 10px;
+/* FALTA:
+- ajustar tamanho para tela toda
+- tirar borda do botão ao clicar
+*/
+
+.content-login {
+    grid-template-columns: repeat(2, 1fr);    
+    height: 100vh;
+}
+
+.left {    
+    height: 100%;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+     
 }
 
 .right {
     background-color: #004669;
-    color: #EFEFF9;    
-    padding: 100px 300px 100px 100px;
-    margin: 0;    
+    color: #EFEFF9;        
+    margin: 0;  
+    height: 100%; 
+    display: flex;
+    justify-content: center;  
+    align-items: center;
 }
 
-.right input {
+.input {
     width: 200px;
     height: 40px; 
     margin: 10px 0px;   
@@ -38,8 +94,7 @@ body {
 }
 
 .right p {
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 1rem;    
 }
 
 .bt-gold {
@@ -52,4 +107,168 @@ body {
     font-weight: 900;
     border-radius: 50px;
     border: hidden;
+}
+
+/* Página Inicial */
+
+/* Perfil */
+
+.content-index {
+    grid-template-columns: 1fr 3fr;      
+    
+}
+
+.profile {
+    color: #f2f2f2; 
+    font-weight: 400;  
+}
+
+.profile span {
+    color: #FDB43A;
+    font-weight: bold;    
+}
+
+.img-profile {
+    background-image: url('../images/img-profile.jpg');
+    background-size: 100%;
+    border-radius: 100px;
+    height: 150px;  
+    width: 150px;   
+    margin: auto;       
+}
+
+.user {
+    padding: 15px;
+    text-align: center;
+    background-color: #205E7D;
+    margin: 0;    
+}
+
+.user h2 {
+    margin: 5px;
+}
+
+.user h3 {
+    margin: 0;    
+    font-weight: 400;    
+}
+
+.resume {
+    background-color: #004669;
+    margin: 0;
+    padding-left: 20px;
+    padding-bottom: 3px;
+}
+
+.resume h3 {
+    margin: 0;
+    padding-top: 16px;
+}
+
+.metas {
+    display: flex;
+    padding-top: 10px;
+}
+
+.metas-mes {
+    display: flex;    
+    align-items: center;
+}
+
+.metas-ano {
+    display: flex;
+    align-items: center;
+}
+
+.grafico-cursos {
+    padding-top: 20px;
+}
+
+/* Feed */
+
+
+.feed-content {
+    padding: 0 30px;
+    color: #004669; 
+}
+
+.feed-content .title {
+    color: rgba(22, 61, 81, 0.65);
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    padding-left: 10px;
+}
+
+.feed-content hr {
+    width: 100%;    
+    background-color: rgba(255, 255, 255, 0.794);
+    height: 1px;
+    border: hidden;
+}
+
+.box-aniversariantes {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #EFEFF9;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+.aniversariante {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.aniversariante span {
+    color: #FDB43A;         
+}
+
+.aniversariante h3 {    
+    margin: 0;
+}
+
+.aniversariante-ft img {
+    max-height: 70px;
+    border-radius: 50px;
+}
+
+.quadro-avisos {
+    display: grid;
+    grid-template-columns: 2fr 1fr;        
+}
+
+.box-avisos {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    background-color: #EFEFF9;
+    border-radius: 30px;
+    margin-right: 50px;    
+}
+
+.box-reunioes {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    background-color: #EFEFF9;
+    border-radius: 30px;
+}
+
+.reuniao {
+    display: flex;
+    margin: 0px;
+}
+
+.reuniao svg {
+    padding-right: 20px;
+    margin: 10px 0 5px 0;
+}
+
+.reuniao h4 {
+    padding-right: 20px;
+    margin-top: 0px;
 }
