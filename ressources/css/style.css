@@ -6,10 +6,12 @@ body {
     font-family: 'Roboto', sans-serif;       
     height: 100vh;   
     overflow: hidden;
+    color: #004669;
 }
 
 span {
     font-weight: bold;   
+    color: #FDB43A;  
 }
 
 ul {
@@ -27,8 +29,7 @@ li {
 
 li p {
     margin: 0;
-    padding-top: 10px;
-    color: #004669;
+    padding-top: 10px;   
 }
 
 a {
@@ -61,6 +62,14 @@ header {
     margin: 0;    
 }
 
+select {
+    padding: 10px 20px;
+    width: 180px;
+    border-radius: 10px;
+    color: #004669;
+    font-weight: bold;
+}
+
 
 .content {     
     display: grid; 
@@ -84,8 +93,7 @@ header {
     height: 100%;
     display: flex;
     justify-content: center;  
-    align-items: center;
-     
+    align-items: center;     
 }
 
 .right {
@@ -121,6 +129,7 @@ header {
     font-weight: 900;
     border-radius: 50px;
     border: hidden;
+    margin-top: 20px;
 }
 
 /* Página Inicial */
@@ -137,10 +146,7 @@ header {
     height: 100%;  
 }
 
-.profile span {
-    color: #FDB43A;
-    font-weight: bold;    
-}
+
 
 .img-profile {
     background-image: url('../images/img-profile.jpg');
@@ -249,10 +255,6 @@ p.hoje {
     align-items: center;   
 }
 
-.aniversariante span {
-    color: #FDB43A;         
-}
-
 .aniversariante p {    
     margin: 0;
 }
@@ -268,7 +270,7 @@ p.hoje {
     grid-column-gap: 20px;   
 }
 
-.box-avisos {
+.box-cinza {
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -317,14 +319,6 @@ p.legenda {
     font-size: 1rem;
 }
 
-.box-reunioes {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;    
-    background-color: #EFEFF9;
-    border-radius: 30px;
-}
-
 .reuniao {
     display: flex;
     margin: 0px;
@@ -334,4 +328,36 @@ p.legenda {
 .reuniao p {
     padding-right: 20px;
     margin: 0px;
+}
+
+/* DASHBOARD */
+
+/*FALTA:
+- alinhar texto à esquerda
+- alinhar botão no centro
+*/
+
+.page-content {
+    padding: 10px 50px;
+}
+
+
+.line {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    padding: 10px 50px;    
+}
+
+.bold {
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.objetivos {
+    margin: 0;    
+}
+
+.just-esq {
+    justify-content: left;
 }
