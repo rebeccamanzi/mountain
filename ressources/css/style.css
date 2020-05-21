@@ -46,7 +46,8 @@ h4 {
 
 p {
     font-size: 0.9rem;
-    font-weight: 400;   
+    font-weight: 400;  
+    margin: auto; 
 }
 
 header {
@@ -154,15 +155,23 @@ header {
     padding: 15px;
     text-align: center;
     background-color: #205E7D;
-    margin: 0;        
+    margin: 0;     
+       
 }
 
-.user h2 {
-    margin: 5px;
+.user h1 {
+    padding: 10px;
+    margin: 0;
+    font-size: 1.5rem;
 }
 
-.user h3 {
-    margin: 0;    
+.user h2 {   
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 400;;
+}
+
+.user p {   
     font-weight: 400;    
 }
 
@@ -171,11 +180,16 @@ header {
     margin: 0;
     padding-left: 20px;
     padding-bottom: 3px;
+    height: 100%;
 }
 
-.resume h3 {
-    margin: 0;
-    padding-top: 16px;
+.resume p {   
+    padding-top: 10px;
+}
+
+p.hoje {    
+    font-size: 0.8rem;
+    padding: 20px 0px;    
 }
 
 .metas {
