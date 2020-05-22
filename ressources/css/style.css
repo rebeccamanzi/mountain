@@ -18,7 +18,6 @@ ul {
     display: flex;      
 }
 
-
 li {
     list-style: none;
     padding: 10px;
@@ -167,14 +166,13 @@ svg {
     padding: 15px;
     text-align: center;
     background-color: #205E7D;
-    margin: 0;   
-       
+    margin: 0;        
 }
 
 .user h2 {   
     margin: 0;
     font-size: 1.2rem;
-    font-weight: 400;;
+    font-weight: 400;
 }
 
 .user p {   
