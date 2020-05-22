@@ -36,6 +36,12 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    padding: 10px 0;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
 h3 {
     font-size: 1rem;
     font-weight: 400;    
@@ -48,7 +54,7 @@ h4 {
 p {
     font-size: 0.9rem;
     font-weight: 400;  
-    margin: auto; 
+    margin: 0; 
 }
 
 header {
@@ -59,7 +65,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
-    margin: 0;    
+    margin: 0;        
 }
 
 select {
@@ -68,13 +74,18 @@ select {
     border-radius: 10px;
     color: #004669;
     font-weight: bold;
+    margin: 10px;
 }
 
+svg {
+    margin: 0;
+}
 
 .content {     
     display: grid; 
     margin: 0;    
     padding: 0;
+    height: 100%;
 }
 
 /* Tela de Login */
@@ -163,12 +174,6 @@ select {
     background-color: #205E7D;
     margin: 0;     
        
-}
-
-.user h1 {
-    padding: 10px;
-    margin: 0;
-    font-size: 1.5rem;
 }
 
 .user h2 {   
@@ -275,7 +280,7 @@ p.hoje {
     flex-direction: column;
     padding: 20px;
     background-color: #EFEFF9;
-    border-radius: 30px;       
+    border-radius: 30px;  
 }
 
 .notif-branca {
@@ -302,17 +307,8 @@ p.hoje {
     margin: 0;
 }
 
-p.legenda {
-    margin: 0;
+p.legenda {    
     padding-top: 5px;
-}
-
-.time svg {
-    padding-right: 10px;
-}
-
-.time p {
-    margin: 0;   
 }
 
 .title-aviso span {
@@ -323,7 +319,6 @@ p.legenda {
     display: flex;
     margin: 0px;
 }
-
 
 .reuniao p {
     padding-right: 20px;
@@ -345,8 +340,8 @@ p.legenda {
 .line {
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
-    padding: 10px 50px;    
+    justify-content: space-between;    
+    padding: 10px 20px;    
 }
 
 .bold {
@@ -355,9 +350,106 @@ p.legenda {
 }
 
 .objetivos {
-    margin: 0;    
+    display: flex;          
+    padding: 5px 20px; 
+    justify-content: space-between;        
 }
 
-.just-esq {
-    justify-content: left;
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+/* DASHBOARD */
+
+.grid-3col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;     
+}
+
+.line-grid {
+    display: flex;
+    justify-content: space-between;            
+}
+
+.margin {
+    margin-top: 20px;
+}
+
+.subtitle {
+    padding: 10px 0px;
+}
+
+/* BADGES */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: 0 auto 20px auto;
+    grid-gap: 30px;
+    justify-items: center;    
+}
+
+.grid svg {
+    padding: 10px 0px;
+}
+
+.align {    
+    justify-content: center;
+    align-items: center;  
+    text-align: center;
+    width: 90%;
+}
+
+p.peq {
+    font-size: 0.8rem;
+}
+
+/* FORUM */
+
+.grid-2col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;  
+    max-width: 1200px;
+    margin: 0 auto 20px auto;
+}
+
+.grid-2col .box-cinza {
+    overflow-y: scroll;
+}
+
+.avatar {    
+    max-height: 70px;
+    border-radius: 50px;
+}
+
+.notif-txt {
+    text-align: left;
+}
+
+.notif-txt h1, p {
+    margin: 0;
+    padding: 0 0 0 10px ;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0 0 10px;
+}
+
+.bt-blue {
+    width: 180px;
+    height: 35px;    
+    text-align: center;    
+    border-color: #004669; 
+    color: #004669;;
+    font-weight: 900;
+    border-radius: 50px;  
+}
+
+
